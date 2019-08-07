@@ -1116,7 +1116,8 @@ public final class WeekView<T> extends View
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        return gestureHandler.onTouchEvent(event);
+        gestureHandler.onTouchEvent(event);
+        return true;
     }
 
     @Override
